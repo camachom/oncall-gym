@@ -1,0 +1,97 @@
+[
+  {
+    "id": "rb-checkout-latency",
+    "service": "checkout",
+    "title": "High Latency Investigation",
+    "symptoms": [
+      "p95 latency spike",
+      "slow responses",
+      "timeout errors",
+      "elevated response times"
+    ],
+    "severity": "high",
+    "steps": [
+      "Check recent deploys - latency issues often correlate with code changes",
+      "Review error logs for timeout or connection errors",
+      "Check database connection pool metrics",
+      "Verify downstream service health (payment, inventory)",
+      "Check memory and CPU utilization for resource exhaustion",
+      "If recent deploy suspected, consider rollback"
+    ],
+    "escalation": "If unable to identify root cause after 30 minutes, page platform-oncall",
+    "related_dashboards": [
+      "checkout-service-overview",
+      "payment-integration-health"
+    ],
+    "last_updated": "2024-01-10"
+  },
+  {
+    "id": "rb-checkout-payment",
+    "service": "checkout",
+    "title": "Payment Processing Failures",
+    "symptoms": [
+      "payment errors",
+      "transaction failures",
+      "stripe errors",
+      "payment timeout"
+    ],
+    "severity": "critical",
+    "steps": [
+      "Check Stripe status page for outages",
+      "Review payment service logs for error patterns",
+      "Verify API keys are valid and not expired",
+      "Check rate limiting - are we hitting Stripe limits?",
+      "If Stripe is healthy, check our payment SDK version",
+      "Enable fallback payment processor if available"
+    ],
+    "escalation": "Page payments-oncall immediately for payment outages",
+    "related_dashboards": [
+      "payment-processing-metrics",
+      "stripe-integration"
+    ],
+    "last_updated": "2024-01-08"
+  },
+  {
+    "id": "rb-checkout-rollback",
+    "service": "checkout",
+    "title": "Emergency Rollback Procedure",
+    "symptoms": [
+      "service degradation after deploy",
+      "errors after release",
+      "need to revert"
+    ],
+    "severity": "high",
+    "steps": [
+      "Verify the issue started after a recent deploy",
+      "Check if rollback is safe (no database migrations in the release)",
+      "Run: kubectl rollout undo deployment/checkout",
+      "Monitor metrics for recovery",
+      "If rollback doesn't help, the issue may not be deploy-related"
+    ],
+    "escalation": "If rollback fails or causes new issues, page platform-oncall",
+    "related_dashboards": [
+      "deployment-history",
+      "rollback-status"
+    ],
+    "last_updated": "2024-01-05"
+  },
+  {
+    "id": "rb-inventory-sync",
+    "service": "inventory",
+    "title": "Stock Synchronization Issues",
+    "symptoms": [
+      "inventory mismatch",
+      "overselling",
+      "stock count errors"
+    ],
+    "severity": "high",
+    "steps": [
+      "Check warehouse API connectivity",
+      "Review sync job logs for errors",
+      "Verify database consistency",
+      "Trigger manual sync if needed"
+    ],
+    "escalation": "Contact warehouse-ops for inventory discrepancies",
+    "last_updated": "2024-01-03"
+  }
+]

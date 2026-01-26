@@ -1,0 +1,37 @@
+{
+  "name": "Checkout Latency Spike",
+  "description": "p95 latency increased 4x after a payment SDK update deploy",
+  "difficulty": "medium",
+  "tags": ["latency", "deploy", "rollback", "payment"],
+  "incident": {
+    "service": "checkout",
+    "description": "p95 latency spike above 500ms on checkout service",
+    "severity": "high",
+    "tags": {
+      "region": "us-east-1",
+      "tier": "production"
+    }
+  },
+  "ground_truth": {
+    "root_cause": "Memory leak in payment SDK v3.0 causing connection pool exhaustion",
+    "correct_mitigation": "Roll back checkout service to v2.3.0",
+    "key_evidence": [
+      "Latency increase started exactly at 10:00 when deploy completed",
+      "Error logs show connection timeout to payment service",
+      "Recent deploy updated payment SDK from v2.x to v3.0",
+      "No other services affected, isolating issue to checkout"
+    ]
+  },
+  "success_criteria": {
+    "must_identify": [
+      "recent deploy as suspect",
+      "correlation between deploy time and latency increase"
+    ],
+    "acceptable_mitigations": [
+      "rollback to v2.3.0",
+      "rollback to previous version",
+      "restart pods to temporarily clear connections"
+    ],
+    "max_steps": 10
+  }
+}

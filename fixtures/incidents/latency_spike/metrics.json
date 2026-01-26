@@ -1,0 +1,73 @@
+{
+  "checkout": {
+    "latency_p95": [
+      { "timestamp": "2024-01-15T10:32:00Z", "value": 580 },
+      { "timestamp": "2024-01-15T10:30:00Z", "value": 520 },
+      { "timestamp": "2024-01-15T10:28:00Z", "value": 480 },
+      { "timestamp": "2024-01-15T10:26:00Z", "value": 450 },
+      { "timestamp": "2024-01-15T10:24:00Z", "value": 420 },
+      { "timestamp": "2024-01-15T10:22:00Z", "value": 380 },
+      { "timestamp": "2024-01-15T10:20:00Z", "value": 350 },
+      { "timestamp": "2024-01-15T10:18:00Z", "value": 300 },
+      { "timestamp": "2024-01-15T10:16:00Z", "value": 250 },
+      { "timestamp": "2024-01-15T10:14:00Z", "value": 200 },
+      { "timestamp": "2024-01-15T10:12:00Z", "value": 160 },
+      { "timestamp": "2024-01-15T10:10:00Z", "value": 130 },
+      { "timestamp": "2024-01-15T10:08:00Z", "value": 115 },
+      { "timestamp": "2024-01-15T10:06:00Z", "value": 110 },
+      { "timestamp": "2024-01-15T10:04:00Z", "value": 105 },
+      { "timestamp": "2024-01-15T10:02:00Z", "value": 100 },
+      { "timestamp": "2024-01-15T10:00:00Z", "value": 95 },
+      { "timestamp": "2024-01-15T09:58:00Z", "value": 92 },
+      { "timestamp": "2024-01-15T09:56:00Z", "value": 90 },
+      { "timestamp": "2024-01-15T09:54:00Z", "value": 88 }
+    ],
+    "error_rate": [
+      { "timestamp": "2024-01-15T10:32:00Z", "value": 0.18 },
+      { "timestamp": "2024-01-15T10:30:00Z", "value": 0.15 },
+      { "timestamp": "2024-01-15T10:28:00Z", "value": 0.12 },
+      { "timestamp": "2024-01-15T10:26:00Z", "value": 0.08 },
+      { "timestamp": "2024-01-15T10:24:00Z", "value": 0.05 },
+      { "timestamp": "2024-01-15T10:22:00Z", "value": 0.03 },
+      { "timestamp": "2024-01-15T10:20:00Z", "value": 0.02 },
+      { "timestamp": "2024-01-15T10:00:00Z", "value": 0.01 },
+      { "timestamp": "2024-01-15T09:58:00Z", "value": 0.01 },
+      { "timestamp": "2024-01-15T09:56:00Z", "value": 0.01 }
+    ],
+    "request_count": [
+      { "timestamp": "2024-01-15T10:32:00Z", "value": 1200 },
+      { "timestamp": "2024-01-15T10:30:00Z", "value": 1250 },
+      { "timestamp": "2024-01-15T10:28:00Z", "value": 1300 },
+      { "timestamp": "2024-01-15T10:00:00Z", "value": 1280 },
+      { "timestamp": "2024-01-15T09:58:00Z", "value": 1250 }
+    ],
+    "memory_mb": [
+      { "timestamp": "2024-01-15T10:32:00Z", "value": 890 },
+      { "timestamp": "2024-01-15T10:30:00Z", "value": 850 },
+      { "timestamp": "2024-01-15T10:28:00Z", "value": 800 },
+      { "timestamp": "2024-01-15T10:26:00Z", "value": 750 },
+      { "timestamp": "2024-01-15T10:24:00Z", "value": 700 },
+      { "timestamp": "2024-01-15T10:22:00Z", "value": 650 },
+      { "timestamp": "2024-01-15T10:20:00Z", "value": 600 },
+      { "timestamp": "2024-01-15T10:18:00Z", "value": 550 },
+      { "timestamp": "2024-01-15T10:16:00Z", "value": 520 },
+      { "timestamp": "2024-01-15T10:14:00Z", "value": 500 },
+      { "timestamp": "2024-01-15T10:12:00Z", "value": 490 },
+      { "timestamp": "2024-01-15T10:10:00Z", "value": 480 },
+      { "timestamp": "2024-01-15T10:00:00Z", "value": 450 },
+      { "timestamp": "2024-01-15T09:58:00Z", "value": 450 },
+      { "timestamp": "2024-01-15T09:56:00Z", "value": 448 }
+    ]
+  },
+  "inventory": {
+    "latency_p95": [
+      { "timestamp": "2024-01-15T10:30:00Z", "value": 45 },
+      { "timestamp": "2024-01-15T10:00:00Z", "value": 42 },
+      { "timestamp": "2024-01-15T09:30:00Z", "value": 44 }
+    ],
+    "error_rate": [
+      { "timestamp": "2024-01-15T10:30:00Z", "value": 0.001 },
+      { "timestamp": "2024-01-15T10:00:00Z", "value": 0.001 }
+    ]
+  }
+}

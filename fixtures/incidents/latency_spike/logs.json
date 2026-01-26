@@ -1,0 +1,86 @@
+[
+  {
+    "timestamp": "2024-01-15T10:32:00Z",
+    "service": "checkout",
+    "level": "error",
+    "message": "Connection timeout to payment service after 30000ms"
+  },
+  {
+    "timestamp": "2024-01-15T10:31:30Z",
+    "service": "checkout",
+    "level": "error",
+    "message": "Failed to process payment: connection pool exhausted"
+  },
+  {
+    "timestamp": "2024-01-15T10:31:00Z",
+    "service": "checkout",
+    "level": "error",
+    "message": "Payment request failed: timeout waiting for connection"
+  },
+  {
+    "timestamp": "2024-01-15T10:30:30Z",
+    "service": "checkout",
+    "level": "warn",
+    "message": "Connection pool utilization at 95%"
+  },
+  {
+    "timestamp": "2024-01-15T10:30:00Z",
+    "service": "checkout",
+    "level": "error",
+    "message": "Connection timeout to payment service"
+  },
+  {
+    "timestamp": "2024-01-15T10:29:00Z",
+    "service": "checkout",
+    "level": "warn",
+    "message": "Slow response from payment service: 450ms"
+  },
+  {
+    "timestamp": "2024-01-15T10:28:00Z",
+    "service": "checkout",
+    "level": "warn",
+    "message": "Payment request latency elevated: 380ms"
+  },
+  {
+    "timestamp": "2024-01-15T10:15:00Z",
+    "service": "checkout",
+    "level": "info",
+    "message": "Connection pool healthy, 40% utilized"
+  },
+  {
+    "timestamp": "2024-01-15T10:05:00Z",
+    "service": "checkout",
+    "level": "info",
+    "message": "Payment service responding normally: 45ms"
+  },
+  {
+    "timestamp": "2024-01-15T10:00:30Z",
+    "service": "checkout",
+    "level": "info",
+    "message": "Deploy completed successfully: v2.3.1"
+  },
+  {
+    "timestamp": "2024-01-15T10:00:00Z",
+    "service": "checkout",
+    "level": "info",
+    "message": "Starting deploy: v2.3.0 -> v2.3.1"
+  },
+  {
+    "timestamp": "2024-01-15T09:55:00Z",
+    "service": "checkout",
+    "level": "info",
+    "message": "All health checks passing"
+  },
+  {
+    "timestamp": "2024-01-15T09:30:00Z",
+    "service": "inventory",
+    "level": "info",
+    "message": "Stock sync completed successfully"
+  },
+  {
+    "timestamp": "2024-01-15T09:00:00Z",
+    "service": "inventory",
+    "level": "info",
+    "message": "Starting scheduled stock sync"
+  }
+]

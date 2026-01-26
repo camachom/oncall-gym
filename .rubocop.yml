@@ -1,0 +1,51 @@
+require:
+  - rubocop-rspec
+
+AllCops:
+  TargetRubyVersion: 3.2
+  NewCops: enable
+  SuggestExtensions: false
+  Exclude:
+    - "vendor/**/*"
+    - "bin/**/*"
+
+# Layout
+Layout/IndentationWidth:
+  Width: 2
+
+Layout/LineLength:
+  Max: 120
+
+# Style
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/FrozenStringLiteralComment:
+  Enabled: true
+
+Style/Documentation:
+  Enabled: false  # Don't require class documentation
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+
+# Metrics
+Metrics/BlockLength:
+  Exclude:
+    - "spec/**/*"  # RSpec blocks are naturally long
+
+Metrics/MethodLength:
+  Max: 15
+
+# RSpec
+RSpec/ExampleLength:
+  Max: 10
+
+RSpec/MultipleExpectations:
+  Max: 5
+
+RSpec/NestedGroups:
+  Max: 4

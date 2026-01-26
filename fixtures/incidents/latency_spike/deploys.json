@@ -1,0 +1,69 @@
+[
+  {
+    "id": "deploy-001",
+    "service": "checkout",
+    "version": "v2.3.1",
+    "previous_version": "v2.3.0",
+    "timestamp": "2024-01-15T10:00:00Z",
+    "author": "alice@example.com",
+    "status": "succeeded",
+    "changes": [
+      "Updated payment SDK from v2.8.0 to v3.0.0",
+      "Added new payment method: Apple Pay",
+      "Refactored connection pooling logic"
+    ],
+    "commit_sha": "abc123def456",
+    "pr_number": 1234,
+    "rollback_available": true,
+    "rollback_command": "kubectl rollout undo deployment/checkout"
+  },
+  {
+    "id": "deploy-002",
+    "service": "checkout",
+    "version": "v2.3.0",
+    "previous_version": "v2.2.9",
+    "timestamp": "2024-01-14T15:30:00Z",
+    "author": "bob@example.com",
+    "status": "succeeded",
+    "changes": [
+      "Fixed cart total calculation bug",
+      "Added logging for checkout flow"
+    ],
+    "commit_sha": "789ghi012jkl",
+    "pr_number": 1220,
+    "rollback_available": true,
+    "rollback_command": "kubectl rollout undo deployment/checkout"
+  },
+  {
+    "id": "deploy-003",
+    "service": "checkout",
+    "version": "v2.2.9",
+    "previous_version": "v2.2.8",
+    "timestamp": "2024-01-12T11:00:00Z",
+    "author": "charlie@example.com",
+    "status": "succeeded",
+    "changes": [
+      "Performance optimization for inventory lookup"
+    ],
+    "commit_sha": "mno345pqr678",
+    "pr_number": 1198,
+    "rollback_available": true,
+    "rollback_command": "kubectl rollout undo deployment/checkout"
+  },
+  {
+    "id": "deploy-004",
+    "service": "inventory",
+    "version": "v1.5.2",
+    "previous_version": "v1.5.1",
+    "timestamp": "2024-01-15T09:00:00Z",
+    "author": "dana@example.com",
+    "status": "succeeded",
+    "changes": [
+      "Updated database connection timeout"
+    ],
+    "commit_sha": "stu901vwx234",
+    "pr_number": 1230,
+    "rollback_available": true,
+    "rollback_command": "kubectl rollout undo deployment/inventory"
+  }
+]
