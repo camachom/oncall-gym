@@ -12,7 +12,7 @@ module OncallGym
   # Phase 1: Core Domain
   require_relative "oncall_gym/incidents/incident"
   require_relative "oncall_gym/incidents/observation"
-  # require_relative "oncall_gym/incidents/hypothesis"
+  require_relative "oncall_gym/incidents/hypothesis"
 
   # Phase 2: Tools
   # require_relative "oncall_gym/tools/base"
