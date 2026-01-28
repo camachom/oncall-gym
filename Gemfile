@@ -12,6 +12,7 @@ gem "dry-validation", "~> 1.10" # Schema validation
 # Testing
 gem "rspec", "~> 3.13"
 gem "rspec-json_expectations", "~> 2.2"
+gem "debug", "~> 1.9"
 
 # Linting
 gem "rubocop", "~> 1.69", require: false

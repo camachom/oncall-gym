@@ -15,8 +15,9 @@ module OncallGym
   require_relative "oncall_gym/incidents/hypothesis"
 
   # Phase 2: Tools
-  # require_relative "oncall_gym/tools/base"
-  # require_relative "oncall_gym/tools/registry"
+  require_relative "oncall_gym/tools/result"
+  require_relative "oncall_gym/tools/base"
+  require_relative "oncall_gym/tools/registry"
   # require_relative "oncall_gym/tools/logs_tool"
   # require_relative "oncall_gym/tools/metrics_tool"
   # require_relative "oncall_gym/tools/deploys_tool"

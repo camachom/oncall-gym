@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require "bundler/setup"
+require "debug"
 require "rspec/json_expectations"
 
 # Load the library
